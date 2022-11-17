@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+header{
+    padding: 20px 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    color: yellow;
+    transition: .3s;
+}
+body {
+    background-color: lightslategray;
+} 
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+fieldset{
+    border: 1px solid yellow;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+input[type=submit] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.error {
+    display: block;
+    color: red;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form ul {
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+.box {
+    width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+/* typography */
+p{
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+h1, h2, h3 {
+    margin-bottom: 10px;
+    font-family: playfair, serif;
+}
