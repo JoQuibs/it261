@@ -2,7 +2,6 @@
 /*styles for my website*/
 
 *{
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -65,7 +64,6 @@ nav ul li a:hover{
 
 main{
     width: 62%;
-    height: 400px;
     background: lightslategray;
     float: left;
 }
@@ -127,8 +125,8 @@ h1, h2, h3 {
 /* form style */
 
 form {
-    max-width: 400px;
-    margin: 20px auto;
+    max-width: 680px;
+    margin: 0 auto 30px auto;
 }
 
 fieldset{
@@ -138,7 +136,7 @@ fieldset{
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin: 5px 0 5px 0;
     font-weight: bold;
     font-size: 1.2em;
 }
