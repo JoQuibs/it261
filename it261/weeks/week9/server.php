@@ -1,7 +1,7 @@
 <?php
 // server.php file - start of session
 
-session_start():
+session_start();
 include('config.php');
 // include('./includes/header.php');
 
