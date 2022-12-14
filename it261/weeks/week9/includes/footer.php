@@ -9,7 +9,6 @@
         <li><a id="css-checker" href="#">CSS Validation</a></li>
     </ul>
     </div>
-</footer>
         
         <script>
                 document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
