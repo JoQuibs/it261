@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title><?php echo $title; ?></title>
+</head>
+<body class="<?php echo $body ;?>">
+
+<header>
+<div class="inner-header">
+<a href="index.php">
+    <img id="logo" src="images/logo.png" alt="logo">
+</a>
+<?php
+if(isset($_SESSION['success'])) :?>
+<div class="success">
+<h3>
+<?php echo $_SESSION['success'];
+unset($_SESSION['success']); ?>
+</h3>
+</div>
+<!--- close success div --->
+<?php endif ;?>
+
+<?php 
+if(isset($_SESSION['username'])) :?>
+<div class="welcome-logout">
+<h3> Welcome,
+<?= $_SESSION['username'] ?>
+</h3>
+<p><a href="index.php?logout='1' ">Logout</a></p>
+</div>
+<!--- close welcome-logout div --->
+<?php endif ;?>
+
+<!-- <nav>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Daily</a></li>
+        <li><a href="">Project</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Gallery</a></li>
+    </ul>
+</nav> -->
+
+<nav>
+<ul>
+<?php
+echo make_links($nav);
+?>
+</ul>
+</nav>
+
+</div>
+</header>
+<!-- end inner header -->
